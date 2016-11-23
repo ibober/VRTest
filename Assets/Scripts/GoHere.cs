@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GoHere : MonoBehaviour
 {
-    public float GazeTime = 3.0f;
+    public float GazeTime = 3.0f; //also change value in CheckTimer() method
     private bool timerIsTicking = false;
 
     void Update()
@@ -22,7 +22,7 @@ public class GoHere : MonoBehaviour
     public void CheckTimer() //stops timer
     {
         timerIsTicking = false;
-        GazeTime = 3.0f;
+        GazeTime = 3.0f; //also change default value
     }
 
     void Move()
